@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    	<script src="includes/scripts.js"></script>
+    	<script src="includes/get_student_details.js"></script>
+    	<link href="includes/lightbox.css" rel="stylesheet">
+    	<meta charset="UTF-8">
+    	<link rel="stylesheet" href="includes/style.css">
+    	<title>Form</title>
+    </head>
+    <body>
+    <div id="wrapper">
+			<main>
+				
+				<a href="#" id="logo"></a>
+						
+				<h1>עריכת פרטי סטודנט </h1><br>
+		   			
+   				<form action="myform.php" method="post" accept-charset="utf-8" enctype="multipart/form-data"> 
+
+		   			<label class="nameOfField">שם הסטודנט:<br><input class="greyBackground" name="myName" type="text" value="" id="studentName" readonly></label><br>
+		   			<label class="nameOfField">תעודת זהות:<br><input class="greyBackground" name="id" type="text" value="" id="id" readonly></label><br>
+		   			<h3 class="red-star">התמחות:</h3><br>
+					
+					<label class="checkBoxField"><input type="checkbox" name="specialist[]" value="analitics" id="removeLastCheckBox" minlength="1"/> אנליטית </label><br>
+					<label class="checkBoxField"><input type="checkbox" name="specialist[]" value="web" id="removeLastCheckBox"/> ווב</label><br>
+					<label class="checkBoxField"><input type="checkbox" name="specialist[]" value="mobile" id="removeLastCheckBox"/> מובייל</label><br>
+		   			<label class="checkBoxField"><input type="checkbox" name="specialist[]" value="cyber" id="removeLastCheckBox"/> סייבר</label><br>
+		   			<label class="checkBoxField"><input type="checkbox" name="specialist[]" value="noSpecialist" id="noSpecalise" /> שום התמחות</label><br><br>
+		   			
+		   			<label class="nameOfField">ציטוט:<br><input name="myQuote" type="text" value="" maxlength="45" id="quote" class="fieldsize"/></label><br>
+		   			<label id="pictureUpload1" class="nameOfField red-star">העלאת תמונת פרופיל (פנים) בגודל 125*125 PNG<input type="file" name="profile" id="profileUploadFile"></label>
+		   			<label id="pictureUpload2" class="nameOfField red-star">העלאת תמונה מלאה בעמידה שקופה PNG<input type="file" name="standPicture" id="standUploadFile"></label>
+		   			<label id="pictureUpload3" class="nameOfField red-star">1-העלאת תמונת צילום פרויקט JPEG<input type="file" name="projectPicture1" id="projectPictureFile1"><br></label>
+		   			<label id="pictureUpload4" class="nameOfField red-star">2-העלאת תמונת צילום פרויקט JPEG<input type="file" name="projectPicture2" id="projectPictureFile2"><br></label>
+		            <label id="pictureUpload5" class="nameOfField red-star">3-העלאת תמונת צילום פרויקט JPEG<input type="file" name="projectPicture3" id="projectPictureFile3"><br></label>
+		   			<label class="nameOfField">קישור לגיטהאב:<br><input name="myGithub" type="url" value="" id="gitHub" class="fieldsize"/></label><br>
+		   			<label class="nameOfField">אתר:<br><input name="myUrl" type="url" value="" id="url" class="fieldsize"/></label><br>
+		   			<label class="nameOfField">אימייל:<br><input name="myMail" type="email" value="" id="mail" class="fieldsize"/></label><br>
+		   			<label class="nameOfField">קישור לפרופיל לינקדאין :<br><input name="myLinkedin" type="url" value="" id="linkedin" class="fieldsize"/></label><br>
+		   			<label id="cvLabel" class="nameOfField red-star">העלאת קורות חיים-קובץ PDF<input type="file" name="cvFile" id="cvFile"><br></label><br><br><br><br><br><br>
+		   			<input type="submit" value="שלח" name="saveIntoServer" id="sendButtom">
+				
+				</form>
+				
+			</main>
+		</div>
+		<script>
+		(function(){
+			onclickCheckBox();     // all checkbox specalize
+			removeCheckBoxAll();   // remove all checkbox if NoSpecalize is checked
+			getStudentDetails();   // get student details by id	
+		})();
+		
+		</script>
+		<script src="includes/lightbox.js"></script>
+	</body>
+</html>

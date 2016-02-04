@@ -1,0 +1,145 @@
+* {
+ 	margin:0;
+	padding:0;
+}
+
+#wrapper{
+	margin:0 auto;
+	width:100%;
+}  
+
+main{
+	direction:rtl;
+	text-align:right;
+	margin:0 auto;
+	width:900px;
+	position:relative;
+	border: 1px solid black;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-family:Arial;
+}
+
+.nameOfField {
+    display: inline-block;
+    width: 350px;
+    margin-bottom: 20px;
+    
+}
+
+.checkBoxField{
+	display: inline-block;
+    width: 350px;
+}
+
+
+input{
+	font-size: 18px;
+	border: medium none;
+	border-radius: 2px;
+	margin: 5px 0px 10px 0px;
+	box-shadow: 0 0 0 3px #FFF;
+}
+
+input[type="checkbox"]{
+	box-shadow:none;
+}
+
+
+.fieldsize{
+	width:310px;
+}
+
+
+.greyBackground{
+	background: #a29e9e;
+}
+#pictureUpload1, #pictureUpload2,#pictureUpload3,#pictureUpload4,#pictureUpload5{
+	display:block;
+}
+
+.red-star:before {
+    color: red;
+    content:"*";
+}
+
+/*
+#logo{
+	display:block;
+	width: 90px;
+	height: 106px;
+	background: url("../images/logo.png");
+	float:right;
+	margin:20px 20px 0px 0px;
+}*/
+
+
+#sendButtom{
+	margin-right:350px;
+}
+
+form{
+	position:relative;
+	/*right:100px;*/
+	margin:50px 120px 0px 0px;
+}
+
+.pictureBox1{
+	border:1px solid black;
+	width:200px;
+	height:250px;
+	position: absolute;
+	float:left;
+	left:10px;
+	top: 230px;
+}
+.pictureBox2{
+	border:1px solid black;
+	width:200px;
+	height:250px;
+	position: absolute;
+	float:left;
+	left:220px;
+	top: 230px;
+}
+.pictureBox3{
+	border:1px solid black;
+	width:200px;
+	height:250px;
+	position: absolute;
+	float:left;
+	left:10px;
+	top: 490px;
+}
+.pictureBox4{
+	border:1px solid black;
+	width:200px;
+	height:250px;
+	position: absolute;
+	float:left;
+	left:220px;
+	top: 490px;
+}
+.pictureBox5{
+	border:1px solid black;
+	width:200px;
+	height:250px;
+	position: absolute;
+	float:left;
+	left:110px;
+	top: 750px;
+}
+
+.picture{
+	width:200px;
+	height:250px;
+}
+
+h1{
+	text-align: center;
+	margin-top:20px;
+}
+
+body{
+	background: url("../images/proffesorBG.jpg") ;
+}
